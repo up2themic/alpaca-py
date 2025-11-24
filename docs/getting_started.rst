@@ -43,9 +43,8 @@ different pip executable on your system.
 Errors
 ^^^^^^
 
-Try upgrading your pip before installing if you face errors. ``python -m pip`` keeps the
-upgrade tied to the same Python environment so you do not mix pip versions across
-installations.
+If you encounter installation errors, upgrade pip in the same Python environment to avoid
+mixing versions across environments.
 
 .. code-block:: shell-session
 
@@ -65,8 +64,8 @@ to the active Python environment.
 Poetry
 ^^^^^^
 
-If you're using poetry to manage dependencies in your project. You can add Alpaca-py
-to your project by running
+If you're using poetry to manage dependencies in your project, you can add Alpaca-py
+to your project by running:
 
 .. code-block:: shell-session
 
