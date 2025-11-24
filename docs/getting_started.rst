@@ -29,23 +29,38 @@ Here are some things you can do with Alpaca-py.
 Installation
 ------------
 
-Alpaca-py is supported on Python 3.7+. You can install Alpaca-py using pip. To learn more
+Alpaca-py is supported on Python 3.8+. You can install Alpaca-py using pip. To learn more
 about version histories, visit the `PyPI page <https://pypi.org/project/alpaca-py/>`_.
 
-To install Alpaca-py, run the following pip command in your terminal.
+To install Alpaca-py, run the following command in your terminal. Using ``python -m pip``
+ensures the installer matches your active Python version and virtual environment instead of a
+different pip executable on your system.
 
 .. code-block:: shell-session
 
-    pip install alpaca-py
+    python -m pip install alpaca-py
 
 Errors
 ^^^^^^
 
-Try upgrading your pip before installing if you face errors.
+Try upgrading your pip before installing if you face errors. ``python -m pip`` keeps the
+upgrade tied to the same Python environment so you do not mix pip versions across
+installations.
 
 .. code-block:: shell-session
 
-    pip install --upgrade pip
+    python -m pip install --upgrade pip
+
+Upgrade existing installation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you already have Alpaca-py installed and want the latest version, upgrade with the
+same ``python -m pip`` invocation you used to install it. This keeps the upgrade pinned
+to the active Python environment.
+
+.. code-block:: shell-session
+
+    python -m pip install --upgrade alpaca-py
 
 Poetry
 ^^^^^^
